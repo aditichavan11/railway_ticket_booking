@@ -24,11 +24,14 @@
     display: block;
     padding: 1rem;
     max-width: 30rem;
-    margin: 5rem auto;
+    margin: 15rem auto;
+    margin-right: 5rem;
     border-radius: 4px;
-    
+    float: right;
+    background-color: aliceblue;
   
     }
+    
     .input-group {
       display: flex;
       justify-content: space-evenly;
@@ -77,3 +80,5 @@
     background-color: #641e03;
     border-color: #641e03;
   }
+
+  

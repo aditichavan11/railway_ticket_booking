@@ -1,8 +1,14 @@
-import { useState } from 'react';
+
+import {useNavigate} from "react-router-dom"
 import classes from './Searchtrain.form.module.css';
 const Searchtrainform = () =>{
-    const [newSource, setnewSource] = useState("")
-    return <form className={classes.form}>
+    
+    const navigate = useNavigate();
+    function handleSubmit(event){
+        navigate("Login")
+    }
+    return <div>
+    <form className={classes.form}>
                 <div className={classes['input-group']}>
 
                     <label>TO</label>
@@ -28,7 +34,10 @@ const Searchtrainform = () =>{
                     <label>Category</label><input/>
                 </div>
        
-                <button>Search</button>
+                <button onClick={handleSubmit}>Search</button>
             </form>
+            <h1>Safety | Security | Punctuality</h1>
+        </div>
 };
-export default Searchtrainform;
+
+export default Searchtrainform
