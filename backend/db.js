@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const connectUrl =
-  "mongodb+srv://prathamesh:AlcYll1vZIcdAkGG@cluster0.zxts4h4.mongodb.net/pawar";
+  "mongodb+srv://<<your_cluster_username>>:<<your_cluster_password>>@cluster0.zxts4h4.mongodb.net/pawar";
 
 function connectToMongo() {
   mongoose.connect(connectUrl, {
