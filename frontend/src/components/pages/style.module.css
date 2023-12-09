@@ -1,0 +1,408 @@
+/* LOGIN PAGE  */
+
+.Loginbody{
+    background-color: rgb(255, 255, 255);
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    display: block;
+    padding: 1rem;
+    width: 30rem;
+    height: 20rem;
+    margin: 50rem;
+    /* margin-top: 10px; */
+    /* margin-right: 5rem; */
+    position: absolute;
+    margin-right: 30px;
+    top: 50px;
+    width: 20rem;
+    margin-top: 200px;
+    border-radius: 10px;
+    /* float: center; */
+    
+    
+    
+    }
+    
+    .loginTitle{
+        background-color: rgb(20, 44, 66);
+        max-height: 50rem;
+        max-width: max-content;
+     }
+    
+    .LoginBtn{
+        font: inherit;
+        cursor: pointer;
+        background-color: #8a2b06;
+        border: 2px solid #8a2b06;
+        color: rgb(255, 255, 255);
+        padding: 0.25rem 2rem;
+        border-radius: 20px;
+        font-weight: bold;
+        position: absolute;
+        right: 110px;
+        top: 240px;
+        margin-top: 30px;
+    }
+
+    /* HEADER PAGE */
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5rem;
+        background-color: #8a2b06;
+        color: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 0 10%;
+        /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); */
+        z-index: 10;
+        /* background-image: url(images/img3.png); */
+      }
+
+      /* NAVBAR */
+
+      .Navcontact{
+
+        position: absolute;
+        margin: 100px 1300px;
+        background-color: #641e03;
+        color: antiquewhite;
+        
+        
+
+        /* font: inherit;
+        cursor: pointer;
+        background-color: #8a2b06;
+        border: 2px solid #8a2b06;
+        padding: 0.25rem 2rem;
+        border-radius: 20px;
+        font-weight: bold;
+        position: absolute;
+        right: 90px;
+        top: 240px;
+        margin-top: 30px;
+        justify-content: space-evenly; */
+
+      }
+
+      .Navlogin{
+
+        position: absolute;
+        margin: 100px 1400px;
+        background-color: #641e03;
+        color: antiquewhite;
+         /* margin:left 20px;
+        border-color: #8a2d08;
+        border-width: 0.5cm;
+        padding-top: 1px;
+        cursor: pointer;
+        color:rgb(243, 243, 243);
+        gap:20px;
+        position: absolute;
+        margin: 100px 1300px;
+        background-color: #641e03; */
+        
+
+        /* font: inherit;
+        cursor: pointer;
+        background-color: #8a2b06;
+        border: 2px solid #8a2b06;
+        padding: 0.25rem 2rem;
+        border-radius: 20px;
+        font-weight: bold;
+        position: absolute;
+        right: 110px;
+        top: 240px;
+        margin-top: 30px;
+        justify-content: space-evenly; */
+      }
+
+      .Navsignup{
+        
+        position: absolute;
+        margin: 100px 1200px;
+        background-color: #641e03;
+        color: antiquewhite;
+
+        /* font: inherit;
+        cursor: pointer;
+        background-color: #8a2b06;
+        border: 2px solid #8a2b06;
+        padding: 0.25rem 2rem;
+        border-radius: 20px;
+        font-weight: bold;
+        position: absolute;
+        right: 110px;
+        top: 240px;
+        margin-top: 30px;
+        justify-content: space-evenly;
+       */}
+      
+/* PASSENGER FORM       */
+
+.Passengerf {
+  width: 400px;
+  height: 40rem;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  width: 400px;
+  height: 40rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: grid;
+  margin-left: 35rem;
+  
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+} */
+
+button:hover {
+  background-color: #a50c0c;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+    .passengerBtn{
+        font: inherit;
+        cursor: pointer;
+        /* background-color: #8a2b06; */
+        border: 2px solid #8a2b06;
+        color: rgb(6, 6, 6);
+        padding: 0.25rem 2rem;
+        border-radius: 20px;
+        font-weight: bold;
+        position: absolute;
+        right: 500px;
+        width: fit-content;
+        top: 35rem;
+        margin-top: 7rem;
+        margin-right: 15rem;
+    }
+
+    /* SEARCH TRAIN FORM */
+    .list{
+      background-color: #f0f8ff;
+      display: block;
+        padding:1rem;
+        max-width:30rem;
+        margin: 2rem auto;
+        margin-left: 5rem;
+        border-radius: 10px;
+        height: 4rem;
+        margin-top: 2rem;
+        /* gap: 1px; */
+        /* float: right; */
+    }
+    .form {
+        display: block;
+        padding: 1rem;
+        max-width: 70rem;
+        margin: 15rem auto;
+        margin-right: 5rem;
+        border-radius: 10px;
+        height: 15rem;
+        width: 25rem;
+        float: right;
+        background-color: aliceblue;
+        }
+    
+        .input-group {
+          display: flex;
+          justify-content: space-evenly;
+          gap: 1.5 rem;
+          padding: 2 rem;
+          margin-bottom: 25px;
+        
+        }
+        
+        .form label {
+          display: block;
+          margin-bottom: 1.25rem;
+          font: inherit;
+          font-size: 5 rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 5px;
+        }
+        
+        .form input  {
+          background-color: white;
+          display: block;
+          margin-bottom: 0.25rem;
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #8a2b06;
+          border-radius: 0.25rem;
+          background-color: transparent;
+          color: rgb(0, 0, 0);
+          font-size: 2 rem;
+        }
+    
+        
+       
+      
+      .form button {
+        font: inherit;
+        cursor: pointer;
+        background-color: #8a2b06;
+        border: 2px solid #8a2b06;
+        color: rgb(255, 255, 255);
+        padding: 0.25rem 2rem;
+        border-radius: 20px;
+        font-weight: bold;
+        position: absolute;
+        right: 150px;
+        top: 500px;
+      }
+      
+      .form button:hover,
+      .form button:active {
+        background-color: #8a2b06;
+        border-color: #641e03;
+      }
+
+     /* SEAT BOOKING */
+
+     .booking{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: aliceblue;
+        background-size: cover;
+        display: block;
+        padding: 1rem;
+        max-width: 20rem;
+        height: 10rem;
+        margin: 10rem auto;
+        margin-right: 35rem;
+        border-radius: 10px;
+        float: center;
+        }
+        
+        .bookingBtn{
+            font: inherit;
+            cursor: pointer;
+            background-color: #8a2b06;
+            border: 2px solid #8a2b06;
+            color: rgb(255, 255, 255);
+            padding: 0.25rem 2rem;
+            border-radius: 20px;
+            font-weight: bold;
+            position: absolute;
+            right: 650px;
+            top: 250px;
+            margin-top: 30px;
+        }
+
+        /* SIGNUP PAGE */
+
+        .body{
+            background-color: aliceblue;
+            /* background-size: cover; */
+            /* display: block; */
+            padding: 3rem;
+            max-width: 30rem;
+            height: 35rem;           
+            margin: auto ;
+            margin-top: 8rem;
+            margin-right: 5rem;
+            border-radius: 10px;
+            float: center;
+             }
+            
+            .headersigninTitle{
+                max-height: 30rem;
+                max-width: max-content;
+                justify-content: space-between;
+             }
+            
+            .SubmitBtn{
+                font: inherit;
+                cursor: pointer;
+                background-color: #8a2b06;
+                border: 2px solid #8a2b06;
+                color: rgb(255, 255, 255);
+                padding: 0.25rem 2rem;
+                border-radius: 20px;
+                font-weight: bold;
+                position: absolute;
+                right: 300px;
+                top: 620px;
+                margin-top: 0px;
+            }
+        
+            .box{
+            
+              
+              justify-content: space-evenly;
+              gap: 1 rem;
+              padding: 2 rem;
+              margin-bottom: 25px;
+            }
+             
+            /* Contact */
+            .Contact{
+              font-size: 10px;
+
+            }
+
+/* 
+     PAYMENT.CSS */
+
+     .payment.title{
+
+      font-size: 10px;
+
+     }
+     .cancel{
+      font: inherit;
+                cursor: pointer;
+                background-color: #8a2b06;
+                border: 2px solid #8a2b06;
+                color: rgb(255, 255, 255);
+                padding: 0.25rem 2rem;
+                border-radius: 20px;
+                font-weight: bold;
+                position: absolute;
+                right: 300px;
+                top: 620px;
+                margin-top: 0px;
+     }
