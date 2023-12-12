@@ -7,7 +7,7 @@
     display: block;
     padding: 1rem;
     width: 30rem;
-    height: 20rem;
+    height: 23rem;
     margin: 50rem;
     /* margin-top: 10px; */
     /* margin-right: 5rem; */
@@ -338,18 +338,19 @@ button:hover {
             background-color: aliceblue;
             /* background-size: cover; */
             /* display: block; */
-            padding: 3rem;
+            padding: 2rem;
             max-width: 30rem;
-            height: 35rem;           
+            height: 55rem;           
             margin: auto ;
-            margin-top: 8rem;
+            margin-top: 6rem;
             margin-right: 5rem;
             border-radius: 10px;
             float: center;
              }
             
             .headersigninTitle{
-                max-height: 30rem;
+              height: 2rem;
+                max-height: 10rem;
                 max-width: max-content;
                 justify-content: space-between;
              }
@@ -365,7 +366,7 @@ button:hover {
                 font-weight: bold;
                 position: absolute;
                 right: 300px;
-                top: 620px;
+                top: 58rem;
                 margin-top: 0px;
             }
         
@@ -374,8 +375,35 @@ button:hover {
               
               justify-content: space-evenly;
               gap: 1 rem;
-              padding: 2 rem;
-              margin-bottom: 25px;
+              padding: 1 rem;
+              margin-bottom: 5px;
+            }
+
+            .Toastify__toast-container {
+              z-index: 9999;
+              top: 20px;
+              right: 20px;
+            }
+            
+            
+            
+            .Toastify__toast--success {
+              background-color: #4caf50; /* Green background color */
+              color: #fff; /* White text color */
+              border-radius: 5px; /* Rounded corners */
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Drop shadow */
+              font-size: 16px; /* Font size */
+              text-align: center; /* Center text */
+              padding: 12px; /* Spacing inside the notification */
+            }
+            
+            .Toastify__close-button {
+              color: #fff; /* Color of the close button */
+            }
+            
+            /* Hover effect for the close button */
+            .Toastify__toast--success:hover .Toastify__close-button {
+              color: #fff; /* Change the color on hover */
             }
              
             /* Contact */

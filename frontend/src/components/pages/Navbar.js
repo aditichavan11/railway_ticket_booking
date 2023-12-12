@@ -19,9 +19,7 @@ function handlecontact(event){
         <div >
         <button className={classes.Navcontact} onClick={handlecontact}>Contact Us</button></div>
         <div>
-        <button className={classes.Navlogin} onClick={handleSubmit}>LOGIN </button></div>
-       <div> 
-       <button  className={classes.Navsignup} onClick={handleSearch}>SIGNUP </button></div> 
+        <button className={classes.Navlogin} onClick={handleSubmit}>LOGIN/SIGNUP </button></div>
        </div>
          
     )

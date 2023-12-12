@@ -1,5 +1,6 @@
 import express from "express"
 import { Train } from "../modules.js";
+import mongoose from "mongoose";
 
 const router = express.Router();
 
@@ -31,21 +32,23 @@ router.post("/searchTrains", async (req, res) => {
 
 });
 
-router.
 
 
-router.get("/getFirst10Documents", async (req, res) => {
+// (get request) try using http://localhost:8000/trains/train/65292b742cb920a9034a82cb
+router.get("/train/:train_id", async (req, res) => {
+  const trainId = req.params.train_id;
+  const ObjectId = mongoose.Types.ObjectId;
+
   try {
-    const first10Documents = await Train.find()
-      .select("-stationList") // Exclude the stationList field
-      .limit(10);
-      
-
-    res.send({ first10Documents });
+    const objectId = new ObjectId(trainId); // Create a new ObjectId instance
+    const train = await Train.find({ _id: objectId }).select("-stationList");
+    res.send({ train });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Internal server error" });
   }
+
 });
+
 
 export default router;

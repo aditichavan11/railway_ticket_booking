@@ -1,4 +1,3 @@
-
 import mongoose from "mongoose";
 
 const adminSchema = new mongoose.Schema({
@@ -7,7 +6,7 @@ const adminSchema = new mongoose.Schema({
     required: true,
   },
   age: {
-    type: String,
+    type: Number,
     required: true,
   },
   gender: {
@@ -19,7 +18,7 @@ const adminSchema = new mongoose.Schema({
     required: true,
   },
   noofpassengers: {
-    type: String,
+    type: Number,
     required: true,
   },
 });

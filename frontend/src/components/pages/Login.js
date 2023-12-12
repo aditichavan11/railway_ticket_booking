@@ -2,6 +2,7 @@ import {useNavigate} from "react-router-dom";
 import { useEffect, useState } from 'react';
 import classes from'../pages/style.module.css'
 import Header from './Header'
+import {Link} from'react-router-dom'
 
 
 const Login = () => {
@@ -53,7 +54,8 @@ const Login = () => {
           setusername('')
           setpassword('')
           setError(null)
-          navigate("/Home")
+          alert("Logged In Successfully!")
+        //   navigate("/searchtrainform")
           console.log('login details added', json)
       }
 
@@ -84,7 +86,9 @@ const Login = () => {
             onChange={(e)=> setpassword(e.target.value)}
             value={password}
          />
-        
+        <h5>
+          If not login? <Link to="/Signup">Create account here</Link> {/* Add Link to Signup Page */}
+        </h5>
        <button className={classes.LoginBtn} type="submit">Login</button>
        </form>
        

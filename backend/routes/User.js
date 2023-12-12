@@ -1,6 +1,7 @@
 
 import { Router } from "express";
 import { User } from "../modules.js";
+import { Admin } from "../modules.js";
 import jwt from "jsonwebtoken";
 const secreti = "c4d3tu";
 
@@ -114,7 +115,7 @@ router.post("/passengerform", async (req, res) => {
 
     await newAdmin.save();
     
-
+      
       res.status(201).json({
       message: "Passenger Information added successfully",
       

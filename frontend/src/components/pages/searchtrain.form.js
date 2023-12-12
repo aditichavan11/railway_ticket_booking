@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import classes from './style.module.css'; // Make sure to use the correct CSS file
 import Passengerform from './Passengerf';
+import {Link} from 'react-router-dom';
 
 
 
@@ -57,6 +58,21 @@ const Searchtrainform = () => {
               <option value="Select">Select</option>
               <option value="CSMT">CSMT</option>
               <option value="PUNE">PUNE</option>
+              <option value="NDLS">NEW DELHI</option>
+              <option value="DDN">DEHRADUN</option>
+              <option value="MMCT">MUMBAI CENTRAL</option>
+              <option value="LKO">LUCKNOW</option>
+              <option value="LJN">LUCKNOW JN</option>
+              <option value="MAS">CHENNAI CENTRAL</option>
+              <option value="ASR">AMRITSAR</option>
+              <option value="HWH">HOWRAH</option>
+              <option value="INDB">INDORE</option>
+              <option value="PDY">PUDUCHERRY</option>
+              <option value="AGC">AGRA CONTANMENT</option>
+              <option value="BE">BARIELLY</option>
+              <option value="ADI">AHMEDABAD</option>
+              <option value="JMU">JAMMU TAWI</option>
+              <option value="CDG">CHANDIGARH</option>
               
             </select>
 
@@ -66,9 +82,25 @@ const Searchtrainform = () => {
               onChange={(e) => setDestination(e.target.value)}
               value={destination}
             >
+              
               <option value="Select">Select</option>
               <option value="CSMT">CSMT</option>
               <option value="PUNE">PUNE</option>
+              <option value="NDLS">NEW DELHI</option>
+              <option value="DDN">DEHRADUN</option>
+              <option value="MMCT">MUMBAI CENTRAL</option>
+              <option value="LKO">LUCKNOW</option>
+              <option value="LJN">LUCKNOW JN</option>
+              <option value="MAS">CHENNAI CENTRAL</option>
+              <option value="ASR">AMRITSAR</option>
+              <option value="HWH">HOWRAH</option>
+              <option value="INDB">INDORE</option>
+              <option value="PDY">PUDUCHERRY</option>
+              <option value="AGC">AGRA CONTANMENT</option>
+              <option value="BE">BARIELLY</option>
+              <option value="ADI">AHMEDABAD</option>
+              <option value="JMU">JAMMU TAWI</option>
+              <option value="CDG">CHANDIGARH</option>
              
             </select>
           </div>
@@ -77,7 +109,9 @@ const Searchtrainform = () => {
             <input type="date" />
           </div>
           <div className={classes['input-group']}>
-            {/* <label>Category</label><input/> */}
+            <label>Category</label><input/>
+
+            
           </div>
           <button className="SubmitBtn">Search</button>
         </div>
@@ -92,8 +126,11 @@ const Searchtrainform = () => {
             <ul>
               {trainData.map((train) => (
                  <Link  to={`/passengerF/${train._id}`} key={train._id}><li className={classes.list} key={train._id}>
-                  Train Name: {train.trainName}, Train Number: {train.trainNumber}
-
+                  Train Name: {train.trainName}, Train Number: {train.trainNumber},
+                  From:{train.stationFrom},
+                  To:{train.stationTo},
+                  
+                  {/* //{train.stationList.departureTime} */}
                   
                   
                   {/* Include other properties you want to display */}
@@ -109,3 +146,5 @@ const Searchtrainform = () => {
 };
 
 export default Searchtrainform;
+
+
