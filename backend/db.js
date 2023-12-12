@@ -23,4 +23,9 @@ function connectToMongo() {
     console.log(`Connected to MongoDB. Database name: ${dbName}`);
   });
 }
+<<<<<<< HEAD
 export default connectToMongo;
+=======
+
+export default connectToMongo;
+>>>>>>> 2d1ffae850d03db36879239ae3ec92cffe73fd0e

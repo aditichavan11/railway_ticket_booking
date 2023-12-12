@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
 const adminSchema = new mongoose.Schema({
+<<<<<<< HEAD
   name: {
     type: String,
     required: true,
@@ -51,18 +52,48 @@ const userSchema = new mongoose.Schema({
   username: {
     type: String, 
     unique: true,
+=======
+  username: {
+    type: String,
+>>>>>>> 2d1ffae850d03db36879239ae3ec92cffe73fd0e
     required: true,
   },
   password: {
     type: String,
     required: true,
   },
+<<<<<<< HEAD
   
+=======
+  courseCollection: {
+    type: Array,
+    default: [],
+  },
+});
+
+const Admin = mongoose.model("Admin", adminSchema);
+Admin.createIndexes();
+
+const userSchema = new mongoose.Schema({
+  username: {
+    type: String,
+    required: true,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+  purchasedCourses: {
+    type: Array,
+    default: [],
+  },
+>>>>>>> 2d1ffae850d03db36879239ae3ec92cffe73fd0e
 });
 
 const User = mongoose.model("User", userSchema);
 User.createIndexes();
 
+<<<<<<< HEAD
 
 //train schema
 const trainSchema = new mongoose.Schema({
@@ -71,6 +102,9 @@ const trainSchema = new mongoose.Schema({
     required:true,
 
   },
+=======
+const trainSchema = new mongoose.Schema({
+>>>>>>> 2d1ffae850d03db36879239ae3ec92cffe73fd0e
   trainRunsOnWed: String,
   trainRunsOnFri: String,
   stationList: [
@@ -104,8 +138,11 @@ const Train = mongoose.model("Train", trainSchema);
 Train.createIndexes();
 
 export { User, Admin, Train };
+<<<<<<< HEAD
 
 
 
 
 
+=======
+>>>>>>> 2d1ffae850d03db36879239ae3ec92cffe73fd0e
